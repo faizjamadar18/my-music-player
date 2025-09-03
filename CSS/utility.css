@@ -1,0 +1,50 @@
+.invert {
+    filter: invert(1);
+}
+
+.logos {
+    border-radius: 25px;
+    width: 20px;
+    height: 20px;
+    background-color: #1f1f1f;
+    padding: 15px;
+}
+
+.font{
+    color: rgb(179, 179, 179);
+    font-weight: 400;
+}
+
+.flex {
+    display: flex;
+}
+
+.align {
+    align-items: center;
+}
+.justify{
+    justify-content: center;
+}
+.mainFont {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+.bg-gray {
+    background-color: #121212;
+}
+
+.rounded {
+    border-radius: 5px;
+}
+
+.small-svg {
+    width: 15px;
+    height: 15px;
+}
+.space-btw{
+    justify-content: space-between;
+}
+.font-gray{
+    color: rgb(179, 179, 179);
+}

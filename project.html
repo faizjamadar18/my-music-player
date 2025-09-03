@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/utility.css">
+    <script src="JS/script.js"></script>
+</head>
+
+<body>
+    <div class="nav space-btw">
+        <div class="leftcorner flex">
+            <div class="logo"><img class="invert" src=imgs/logo.svg alt="logo"></div>
+            <div class="home logos"><img class="invert" src="imgs/home.svg" alt="home"></div>
+            <div class="search logos"><img class="invert" src="imgs/search.svg" alt="home"></div>
+        </div>
+        <div class="rightcorner flex align">
+            <div class="text font">
+                <ul>
+                    <li>Premium</li>
+                    <li>Support</li>
+                    <li>Download</li>
+                </ul>
+            </div>
+
+            <div class="partition">|</div>
+
+            <div class="corner">
+                <div class="box flex align">
+                    <img class="invert small-svg" src="imgs/download.svg" alt="download">
+                    <div class="font">Install App</div>
+                </div>
+                <div class="font">Sign Up</div>
+                <button class="btn"><b>Log in</b></button>
+            </div>
+
+        </div>
+    </div>
+    <div class="main flex">
+
+        <div class="left rounded">
+            <div class="heading flex align space-btw">
+                <div class="mainFont">Your Library</div>
+                <img class="plus invert small-svg" src="imgs/plus.svg" alt="">
+            </div>
+            <div class="musics">
+                <div class="music1 flex" data-src="songs/Aasan Nahin Yahan.mp3" data-src1="Aasan Nahin">
+                    <img class="music-img" src="https://i.scdn.co/image/ab67616d0000b2736404721c1943d5069f0805f3"
+                        alt="">
+                    <div class="info">
+                        <div class="font1">Aasan Nahin Yahan</div>
+                        <div class="font2">Arijit Singh, Jeet Gannguli </div>
+                    </div>
+                </div>
+                <div class="music1 flex" data-src="songs/Khatta Flow.mp3" data-src1="Khatta Flow">
+                    <img class="music-img" src="https://i.scdn.co/image/ab67616d00001e02b7b544e5241b69574edc814e"
+                        alt="">
+                    <div class="info">
+                        <div class="font1">Khatta Flow</div>
+                        <div class="font2">Seedhe Maut ft KR$NA</div>
+                    </div>
+                </div>
+                <div class="music1 flex" data-src="songs/Winning Speech.mp3" data-src1="Win-Speech">
+                    <img class="music-img" src="https://i.scdn.co/image/ab67616d0000b273bb0a8916e30754d2e08f28bb"
+                        alt="">
+                    <div class="info">
+                        <div class="font1">Winning Speech</div>
+                        <div class="font2"> Karan Aujla</div>
+                    </div>
+                </div>
+                <div class="music1 flex" data-src="songs/Ehsaas.mp3" data-src1="Ehsaas">
+                    <img class="music-img" src="https://i.scdn.co/image/ab67616d0000b273e80fd38e3f7025158e40a3ae"
+                        alt="">
+                    <div class="info">
+                        <div class="font1">Ehsaas</div>
+                        <div class="font2">Faheem Abdullah, Vaibhav Pani</div>
+                    </div>
+                </div>
+                <div class="music1 flex" data-src="songs/Husn.mp3" data-src1="HUSN">
+                    <img class="music-img" src="https://i.scdn.co/image/ab67616d00001e020d3449f333a83a25feb423f8"
+                        alt="">
+                    <div class="info">
+                        <div class="font1">HUSN</div>
+                        <div class="font2">Anuv Jain</div>
+                    </div>
+                </div>
+                <div class="music1 flex" data-src="songs/Pal Pal.mp3" data-src1="Pal Pal">
+                    <img class="music-img" src="https://i.scdn.co/image/ab67616d0000b27305be603d0ab07ff5b195554e"
+                        alt="">
+                    <div class="info">
+                        <div class="font1">Afusic - Pal Pal</div>
+                        <div class="font2">Talwiinder</div>
+                    </div>
+                </div>
+                <div class="music1 flex" data-src="songs/Aadat.mp3" data-src1="Aadat ">
+                    <img class="music-img" src="https://i.scdn.co/image/ab67616d0000b273a42a1a134199e3568884af8e"
+                        alt="">
+                    <div class="info">
+                        <div class="font1">Aadat </div>
+                        <div class="font2">Atif Aslam, Kunal Khemu, Kalyug </div>
+                    </div>
+                </div>
+                <audio id="audio-player" src=""></audio>
+            </div>
+            <div class="footer font-gray">
+                <div class="line1 flex">
+
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/">
+                            <span>Legal</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/safetyandprivacy/">
+                            <span>Safety &amp; Privacy Center</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/">
+                            <span>Privacy Policy</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/cookies-policy/">
+                            <span>Cookies</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="line2 flex">
+
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">
+                            <span>About Ads</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/accessibility/">
+                            <span>Accessibility</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="line3">
+                    <span><b>Cookies</b></span>
+                </div>
+                <div class="english">
+                    <button class="flex btn1 align justify">
+                        <img class="small-svg invert" src="imgs/english.svg" alt="">
+                        <div><b>English</b></div>
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="right bg-gray rounded">
+            <div class="row1">
+                <img class="invert hammburger" src="imgs/hammburger.svg" alt="">
+                <div class="nav1 flex align space-btw">
+                    <div>
+                        <h2>Trending Songs</h2>
+                    </div>
+                    <div class="font-gray"><b>Show All</b></div>
+                </div>
+                <div class="cards flex">
+                    <div class="card1" data-src="songs/Pardesiya Param Sundari 320 Kbps.mp3" data-src1="Pardesiya">
+                        <img class="song-img" src="https://i.scdn.co/image/ab67616d00001e02d5754cde395f5c46792186c7"
+                            alt="">
+                        <div class="font1">Pardesiya - From "Param Sundari</div>
+                        <div class="font2">Sonu Nigam,Krishnakali Saha,Amitabh Bhattacharya</div>
+                    </div>
+                    <div class="card1" data-src="songs/Aavan Jaavan War 2 320 Kbps.mp3" data-src1="Aavan Jaavan">
+                        <img class="song-img" src="https://i.scdn.co/image/ab67616d00001e0203628829456a6d3f476ce12e"
+                            alt="">
+                        <div class="font1">Aavan Jaavan</div>
+                        <div class="font2">Pritam, Arijit Singh, Nikhita Gandhi</div>
+                    </div>
+                    <div class="card1" data-src="songs/Azul Lavish Dhiman 320 Kbps.mp3" data-src1="AZUL">
+                        <img class="song-img" src="https://i.scdn.co/image/ab67616d00001e02203e6495a78184970ab274ac"
+                            alt="">
+                        <div class="font1">AZUL</div>
+                        <div class="font2">Lavish Dhiman, Guru Randhawa</div>
+                    </div>
+                    <div class="card1" data-src="songs/Mf Gabhru Karan Aujla 320 Kbps.mp3" data-src1="MF Gabhru!">
+                        <img class="song-img" src="https://i.scdn.co/image/ab67616d00001e023dc5639cb321a69b721bed92"
+                            alt="">
+                        <div class="font1">MF Gabhru!</div>
+                        <div class="font2">Karan Aujla, IKKY</div>
+                    </div>
+                    <div class="card1" data-src="songs/Duniya Alag Dhadak 2 320 Kbps (1).mp3" data-src1="Duniya Alag">
+                        <img class="song-img" src="https://i.scdn.co/image/ab67616d00001e02d154ebe17fafefb73e9e51af"
+                            alt="">
+                        <div class="font1">Duniya Alag</div>
+                        <div class="font2"> Siddharth-Garima, Arijit Singh, Shreyas Puranik</div>
+                    </div>
+                    <div class="card1" data-src="songs/Title Track Saiyaara 320 Kbps.mp3" data-src1="Saiyaara">
+                        <img class="song-img" src="https://i.scdn.co/image/ab67616d00001e02a7e251b543c77a6ed356dfbe"
+                            alt="">
+                        <div class="font1">Saiyaara</div>
+                        <div class="font2"> Tanishk Bagchi, Faheem Abdullah</div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="playbar">
+                <div class="abovebar flex">
+                    <div class="song-info"></div>
+                    <div class="playbtn flex invert">
+                        <img id="previous" src="imgs/previousBtn.svg" alt="">
+                        <img id="play" src="imgs/playBtn.svg" alt="">
+                        <img id="next" src="imgs/nextBtn.svg" alt="">
+                    </div>
+                    <div class="song-time"></div>
+                </div>
+                <div class="seekbar"></div>
+                <div class="circle"></div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
