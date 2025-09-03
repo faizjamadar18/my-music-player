@@ -1,7 +1,8 @@
 
 async function main() {   // async function always returns a promise wich cannnot be directy used as output 
 
-    let a = await fetch("http://127.0.0.1:3000/songs/")
+    let a = await fetch("songs.json");
+
 
     // Playing the songs present in your library on click : 
     const your_lib = document.querySelectorAll(".music1")
